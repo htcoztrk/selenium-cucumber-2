@@ -1,0 +1,42 @@
+[
+  {
+    "key": "txtInput",
+    "value": "input[role='combobox']",
+    "type": "css"
+  },
+  {
+    "key": "windowButton",
+    "value": "windowButton",
+    "type": "id"
+  },
+  {
+    "key": "sampleHeading",
+    "value": "sampleHeading",
+    "type": "id"
+  },
+  {
+    "key": "cookieBoxSaveButton",
+    "value": "CookieBoxSaveButton",
+    "type": "id"
+  },
+  {
+    "key": "btnLoginWithEmail",
+    "value": "//span[contains(text(),\" Log In with e-mail \") and @class=\"mat-button-wrapper\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "txtEmail",
+    "value": "email",
+    "type": "id"
+  },
+  {
+    "key": "txtPassword",
+    "value": "password",
+    "type": "id"
+  },
+  {
+    "key": "random",
+    "value": "//a[1]",
+    "type": "xpath"
+  }
+]
