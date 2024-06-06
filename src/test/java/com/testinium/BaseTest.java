@@ -6,6 +6,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Properties;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.TimeUnit;
@@ -58,9 +59,10 @@ public class BaseTest {
     */
     @Before
     public void beforeTest() {
+        Properties properties = System.getProperties();
             logger.info("************************************  BeforeScenario  ************************************");
             try {
-                if (StringUtils.isEmpty(System.getenv("key"))) {
+                if (StringUtils.isEmpty(System.getenv("key"))&&StringUtils.isEmpty(properties.getProperty("key"))) {
                     logger.info("Local cihazda " + selectPlatform + " ortamında " + browserName + " browserında test ayağa kalkacak");
                     if ("win".equalsIgnoreCase(selectPlatform)) {
                         if ("chrome".equalsIgnoreCase(browserName)) {
